@@ -4,7 +4,7 @@ class EvalPhpMixin extends Mixin
 {
   static $__prefix = 'php';
   
-  function sandbox($__path__, $__data__=array(), $__capture__ = false)
+  static function sandbox($__path__, $__data__=array(), $__capture__ = false)
   {
     if($__data__) extract($__data__, EXTR_REFS);
     if($__capture__) ob_start();
