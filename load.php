@@ -8,3 +8,5 @@ W::register_filter('eval_php', function($php, $vars) {
   $s = W::php_sandbox($fname, $vars, true);
   return $s;
 });
+
+W::ensure_writable_folder($config['cache_fpath']);
